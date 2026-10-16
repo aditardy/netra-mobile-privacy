@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi MMS NOC</title>
+<meta name="description" content="Kebijakan privasi aplikasi MMS NOC (Android/iOS) — Privacy policy of the MMS NOC app.">
+<style>
+:root{--bg:#F3F5FA;--card:#FFFFFF;--text:#0E1428;--muted:#4A5578;--line:#E4E7EF;--navy:#0E1428;--gold:#F5C518;--link:#1F4FD1}
+@media (prefers-color-scheme: dark){:root{--bg:#070B16;--card:#0E1428;--text:#E6E9F2;--muted:#A9B2CC;--line:#2C3655;--link:#8DB4FF}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+header{background:var(--navy);color:#fff;padding:28px 16px 24px;border-bottom:4px solid var(--gold)}
+header div{max-width:860px;margin:0 auto}
+header p{margin:4px 0 0;color:#C9D1EA}
+header strong{font-size:1.4rem;letter-spacing:.2px}
+main{max-width:860px;margin:0 auto;padding:16px}
+article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 24px 24px}
+h1{font-size:1.6rem;line-height:1.25;margin:24px 0 8px}
+h2{font-size:1.2rem;margin:28px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:20px 0 6px}
+a{color:var(--link);overflow-wrap:anywhere}
+code{font:0.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--bg);padding:1px 5px;border-radius:6px;overflow-wrap:anywhere}
+ul{padding-left:22px} li{margin:4px 0}
+hr{border:0;border-top:4px solid var(--gold);margin:40px 0 8px;width:64px}
+.table{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--bg)}
+footer{max-width:860px;margin:0 auto;padding:16px 16px 40px;color:var(--muted);font-size:.9rem}
+@media (max-width:600px){article{padding:4px 16px 16px} h1{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<header><div><strong>MMS NOC</strong><p>Kebijakan Privasi · Privacy Policy</p></div></header>
+<main><article>
+<h1 id="kebijakan-privasi-mms-noc">Kebijakan Privasi MMS NOC</h1>
+<p><strong>Bahasa Indonesia</strong> · <a href="#mms-noc-privacy-policy">English below</a></p>
+<p>Terakhir diperbarui: 16 Oktober 2026 (versi 1.2.0: rilis pertama MMS NOC). Berlaku untuk semua versi aplikasi MMS NOC.</p>
+<h2 id="1-tentang-aplikasi-dan-penerbit">1. Tentang aplikasi dan penerbit</h2>
+<p>MMS NOC ("aplikasi") diterbitkan oleh <strong>PT. Megarap Mitra Solusi</strong> ("MMS", "kami") untuk staf dan mitra kerjanya. Aplikasi adalah klien untuk <strong>server Netra milik PT. Megarap Mitra Solusi</strong> — platform NOC (Network Operation Center) yang dipasang dan dikelola PT. Megarap Mitra Solusi sendiri — dan hanya terhubung ke server itu; alamatnya tetap di aplikasi dan tidak bisa diganti pengguna. Aplikasi dibangun dari perangkat lunak klien Netra Mobile yang dikembangkan Tri Adi Santoso ("pengembang aplikasi").</p>
+<h2 id="2-ringkasan">2. Ringkasan</h2>
+<ul><li>Tanpa iklan dan tanpa ID iklan. Aplikasi tidak memuat SDK analitik, pelacakan, maupun pelaporan crash; satu-satunya pengecualian adalah data diagnostik yang dikumpulkan Google Maps SDK untuk Google saat Peta Fiber memakai Google Maps (§4.3).</li><li>Data Netra (akun, perangkat jaringan, alert, dan lainnya) hanya dipertukarkan antara ponsel ini dan server Netra PT. Megarap Mitra Solusi, selalu lewat koneksi terenkripsi (HTTPS).</li><li>Layanan pihak lain hanya dipakai untuk fungsi tertentu: Google Firebase Cloud Messaging (notifikasi) dan Google Maps atau OpenStreetMap (peta dasar).</li><li>Password tidak pernah disimpan — password login maupun password CLI terminal. Data sidik jari dan wajah tidak pernah diakses aplikasi.</li></ul>
+<h2 id="3-data-yang-disimpan-di-perangkat">3. Data yang disimpan di perangkat</h2>
+<div class="table"><table><thead><tr>
+<th>Data</th>
+<th>Penyimpanan</th>
+<th>Kapan dihapus</th>
+</tr></thead><tbody>
+<tr><td>Profil server PT. Megarap Mitra Solusi: alamat server, nama dan tagline organisasi, logo dan foto latar login dari server, waktu terakhir dipakai</td><td>penyimpanan aplikasi</td><td>saat data aplikasi dihapus atau aplikasi dihapus</td></tr>
+<tr><td>Sidik jari (SHA-256) sertifikat TLS yang Anda percayai secara manual</td><td>penyimpanan aman sistem (Android Keystore / iOS Keychain)</td><td>saat data aplikasi dihapus</td></tr>
+<tr><td>Token sesi (refresh token) dan masa berlakunya, waktu perpanjangan terakhir, dan ID sesi perangkat ini dari server; token akses hanya di memori</td><td>penyimpanan aman sistem, terenkripsi</td><td>saat keluar, sesi berakhir, atau data aplikasi dihapus</td></tr>
+<tr><td>Salinan data terakhir dari server untuk dibaca saat offline (dashboard, alert, perangkat, event, BGP, laporan, dan lainnya)</td><td>penyimpanan aplikasi</td><td>saat keluar, sesi berakhir, atau data aplikasi dihapus</td></tr>
+<tr><td>Preferensi: tema, pengaturan kunci aplikasi, pandangan terakhir topologi, lapisan dan jenis Peta Fiber, status pendaftaran notifikasi</td><td>penyimpanan aplikasi</td><td>saat data aplikasi atau aplikasi dihapus</td></tr>
+<tr><td>Cache ubin peta OpenStreetMap (gambar peta publik, maksimum ±200 MB)</td><td>cache aplikasi</td><td>otomatis, atau lewat Setelan Android → Aplikasi → MMS NOC → Penyimpanan → Hapus cache</td></tr>
+</tbody></table></div>
+<p>Data aplikasi dikecualikan dari cadangan cloud dan transfer perangkat Android; di iOS token hanya berlaku di perangkat ini. Aplikasi tidak menulis log ke berkas dan tidak mengirim log ke mana pun.</p>
+<h2 id="4-data-yang-dikirim-dan-tujuannya">4. Data yang dikirim dan tujuannya</h2>
+<h3 id="41-server-netra-pt-megarap-mitra-solusi">4.1 Server Netra PT. Megarap Mitra Solusi</h3>
+<ul><li><strong>Saat memeriksa server:</strong> permintaan informasi branding dan versi server (tanpa data pribadi).</li><li><strong>Saat masuk:</strong> username atau email dan password (hanya untuk diverifikasi server, tidak disimpan aplikasi), jenis platform (Android/iOS), nama model perangkat (mis. "Samsung SM-F966B"), dan versi aplikasi.</li><li><strong>Saat membuka terminal dari internet (versi 1.2.0 dan sesudahnya):</strong> password CLI yang diberikan admin Netra (server Netra 1.26.0). Password CLI hanya diketik untuk membuka terminal dari internet, hanya dikirim ke server Netra Anda untuk diverifikasi, dan tidak pernah disimpan aplikasi — sama seperti password login.</li><li><strong>Selama sesi:</strong> permintaan data yang Anda buka dan tindakan yang Anda lakukan — misalnya acknowledge alert beserta catatan opsional, kata pencarian dan filter, target alat jaringan (ping, traceroute, DNS, cek port — dijalankan oleh server), dan ketikan di terminal SSH/Telnet yang diteruskan server ke perangkat jaringan.</li><li><strong>Untuk notifikasi:</strong> token pendaftaran Firebase Cloud Messaging (FCM), platform, nama model perangkat, dan versi aplikasi.</li><li><strong>Di latar belakang (versi 1.1.0 dan sesudahnya):</strong> agar Anda tidak perlu sering masuk ulang, aplikasi memperpanjang sesi sekitar setiap 6 jam (Android WorkManager; di iOS lewat Background App Refresh bila diizinkan iOS) dan saat server mengirim pemberitahuan bahwa sesi akan berakhir. Perpanjangan hanya mengirim token sesi ke server Netra PT. Megarap Mitra Solusi — tidak ada data baru yang dikumpulkan, dan tidak ada yang dikirim ke pihak lain. Bila Anda menekan "Bukan saya — cabut" pada notifikasi login baru, aplikasi meminta daftar sesi akun Anda dari server lalu mencabut sesi itu.</li></ul>
+<p>Data di server dikelola PT. Megarap Mitra Solusi sesuai kebijakan internal perusahaan (mis. log audit).</p>
+<h3 id="42-google-firebase-cloud-messaging-notifikasi-push">4.2 Google Firebase Cloud Messaging (notifikasi push)</h3>
+<p>Setelah Anda masuk, aplikasi meminta token pendaftaran dari Firebase Cloud Messaging (layanan Google) dan mendaftarkannya ke server Netra PT. Megarap Mitra Solusi. Server Netra mengirim notifikasi alert — judul dan ringkasan alert (misalnya nama perangkat dan jenis gangguan) serta ID alert/perangkat — lewat FCM ke ponsel Anda, memakai proyek Firebase yang dikelola pengembang aplikasi atas nama PT. Megarap Mitra Solusi. Server Netra 1.25.0 juga mengirim pemberitahuan sesi (sesi akan atau sudah berakhir) dan keamanan (login baru ke akun Anda: nama dan platform perangkat, alamat IP, waktu, dan ID sesi). Dalam proses ini Google memproses token, ID instalasi Firebase, isi notifikasi selama pengantaran, dan metrik pengantaran sebagai penyedia layanan. Pengembang aplikasi tidak menyimpan isi notifikasi; konsol Firebase hanya menampilkan statistik pengantaran agregat. Token diganti (dihapus lalu dibuat baru) setiap kali Anda keluar atau sesi berakhir. Kebijakan privasi Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h3 id="43-peta-dasar-peta-fiber">4.3 Peta dasar Peta Fiber</h3>
+<ul><li><strong>Google Maps</strong> (bila tersedia di build dan perangkat; hanya saat Peta Fiber dibuka): Maps SDK mengirim ke Google area peta yang dilihat, alamat IP, metadata permintaan (model perangkat, versi OS dan SDK), pengenal pseudonim khusus Maps SDK, data crash di dalam kode SDK, dan interaksi peta (geser, zoom) — untuk memuat peta serta untuk memelihara dan meningkatkan layanan Google. Berlaku kebijakan privasi Google.</li><li><strong>OpenStreetMap</strong> (bila Google Maps tidak tersedia): ubin peta diminta langsung dari server OpenStreetMap Foundation; permintaan memuat alamat IP, identitas aplikasi (<code>NetraMobile/&lt;versi&gt; (android)</code>), dan koordinat ubin yang dilihat. Kebijakan privasi OSMF: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></li><li>Data kabel dan titik Netra tidak dikirim ke Google maupun OSMF — hanya ubin latar yang dimuat.</li><li>Aplikasi tidak memakai lokasi GPS dan tidak meminta izin lokasi.</li></ul>
+<h3 id="44-tidak-ada-pihak-lain">4.4 Tidak ada pihak lain</h3>
+<p>Tidak ada data yang dijual, dipakai untuk iklan, atau dikirim ke pengembang aplikasi.</p>
+<h2 id="5-izin-aplikasi-android">5. Izin aplikasi (Android)</h2>
+<ul><li><strong>Internet</strong> — menghubungi server Netra, FCM, dan peta.</li><li><strong>Notifikasi</strong> (Android 13+) — menampilkan notifikasi alert; boleh ditolak, aplikasi tetap berfungsi.</li><li><strong>Biometrik</strong> — kunci aplikasi opsional dengan sidik jari atau kunci layar.</li><li>Izin pendukung: menerima pesan FCM, menjaga perangkat tetap aktif sebentar saat memproses notifikasi atau memperpanjang sesi, getar, status jaringan, dan menjadwalkan ulang perpanjangan sesi setelah perangkat dinyalakan ulang.</li><li>Tidak ada layanan latar depan (foreground service). Tidak ada izin lokasi, kamera, mikrofon, kontak, maupun berkas.</li></ul>
+<h2 id="6-biometrik">6. Biometrik</h2>
+<p>Kunci aplikasi (opsional) memakai verifikasi sistem operasi (BiometricPrompt di Android, Face ID/Touch ID di iOS). Aplikasi hanya menerima hasil berhasil atau gagal; sidik jari dan data wajah tidak pernah diakses, tidak disimpan aplikasi, dan tidak meninggalkan perangkat.</p>
+<h2 id="7-keamanan">7. Keamanan</h2>
+<ul><li>Koneksi wajib terenkripsi (HTTPS/WSS); lalu lintas tanpa enkripsi diblokir.</li><li>Sertifikat self-signed hanya dipakai setelah Anda mengonfirmasi sidik jari SHA-256-nya, lalu dipin per server; perubahan sertifikat diblokir sampai Anda menyetujuinya lagi.</li><li>Token sesi disimpan di penyimpanan aman sistem; password login dan password CLI tidak disimpan.</li></ul>
+<h2 id="8-penyimpanan-dan-penghapusan-data">8. Penyimpanan dan penghapusan data</h2>
+<ul><li><strong>Keluar</strong> (Pengaturan → Keluar): perangkat dihapus dari daftar notifikasi server, sesi diakhiri di server, token FCM dihapus, lalu token sesi dan salinan data offline dihapus dari perangkat.</li><li><strong>Sesi di perangkat lain:</strong> Pengaturan → Sesi saya → Cabut, atau "Bukan saya — cabut" pada notifikasi login baru.</li><li><strong>Hapus semuanya:</strong> hapus aplikasi, atau Setelan Android → Aplikasi → MMS NOC → Penyimpanan → Hapus data.</li><li><strong>Data di server Netra</strong> (akun, riwayat sesi, log audit, perangkat notifikasi terdaftar) dikendalikan PT. Megarap Mitra Solusi. Untuk melihat, mengubah, atau menghapus akun dan datanya, hubungi administrator Netra PT. Megarap Mitra Solusi.</li></ul>
+<h2 id="9-anak-anak">9. Anak-anak</h2>
+<p>Aplikasi ditujukan untuk staf jaringan/NOC dewasa dan tidak ditujukan untuk anak-anak.</p>
+<h2 id="10-perubahan-kebijakan">10. Perubahan kebijakan</h2>
+<p>Perubahan diumumkan di halaman ini dengan tanggal pembaruan baru; perubahan penting juga disebut di catatan rilis aplikasi.</p>
+<h2 id="11-kontak">11. Kontak</h2>
+<p>Pertanyaan tentang kebijakan ini: <strong><a href="mailto:tri@mms.net.id">tri@mms.net.id</a></strong> (PT. Megarap Mitra Solusi). Untuk data di server Netra, hubungi administrator Netra PT. Megarap Mitra Solusi.</p>
+<hr>
+<h1 id="mms-noc-privacy-policy">MMS NOC Privacy Policy</h1>
+<p><strong>English</strong> · <a href="#kebijakan-privasi-mms-noc">Bahasa Indonesia di atas</a></p>
+<p>Last updated: 16 October 2026 (version 1.2.0: first MMS NOC release). Applies to all versions of the MMS NOC app.</p>
+<h2 id="1-about-the-app-and-the-publisher">1. About the app and the publisher</h2>
+<p>MMS NOC (the "app") is published by <strong>PT. Megarap Mitra Solusi</strong> ("MMS", "we") for its staff and partners. The app is a client for <strong>PT. Megarap Mitra Solusi's own Netra server</strong> — a NOC (Network Operation Center) platform that PT. Megarap Mitra Solusi installs and operates itself — and connects only to that server; its address is fixed in the app and cannot be changed by the user. The app is built from the Netra Mobile client software developed by Tri Adi Santoso (the "app developer").</p>
+<h2 id="2-summary">2. Summary</h2>
+<ul><li>No ads and no advertising ID. The app contains no analytics, tracking or crash-reporting SDK; the only exception is the diagnostic data the Google Maps SDK collects for Google when the fiber map uses Google Maps (§4.3).</li><li>Netra data (account, network devices, alerts and more) is exchanged only between this phone and PT. Megarap Mitra Solusi's Netra server, always over an encrypted connection (HTTPS).</li><li>Third-party services are used only for specific functions: Google Firebase Cloud Messaging (notifications) and Google Maps or OpenStreetMap (base map).</li><li>Passwords are never stored — neither the sign-in password nor the terminal CLI password. Fingerprint and face data are never accessed by the app.</li></ul>
+<h2 id="3-data-stored-on-the-device">3. Data stored on the device</h2>
+<div class="table"><table><thead><tr>
+<th>Data</th>
+<th>Storage</th>
+<th>When it is deleted</th>
+</tr></thead><tbody>
+<tr><td>PT. Megarap Mitra Solusi server profile: server address, organization name and tagline, logo and login background image from the server, last used time</td><td>app storage</td><td>when the app data or the app is removed</td></tr>
+<tr><td>SHA-256 fingerprint of a TLS certificate you trusted manually</td><td>system secure storage (Android Keystore / iOS Keychain)</td><td>when the app data is removed</td></tr>
+<tr><td>Session token (refresh token) and its expiry, the time of the last extension, and this device's session ID from the server; the access token is kept in memory only</td><td>system secure storage, encrypted</td><td>on sign-out, session expiry, or when the app data is removed</td></tr>
+<tr><td>Copy of the last data received from the server for offline reading (dashboard, alerts, devices, events, BGP, reports and more)</td><td>app storage</td><td>on sign-out, session expiry, or when the app data is removed</td></tr>
+<tr><td>Preferences: theme, app lock settings, last topology view, fiber map layers and map type, notification registration state</td><td>app storage</td><td>when the app data or the app is removed</td></tr>
+<tr><td>OpenStreetMap tile cache (public map images, up to about 200 MB)</td><td>app cache</td><td>automatically, or via Android Settings → Apps → MMS NOC → Storage → Clear cache</td></tr>
+</tbody></table></div>
+<p>App data is excluded from Android cloud backup and device transfer; on iOS the token is valid on this device only. The app does not write logs to files and does not send logs anywhere.</p>
+<h2 id="4-data-sent-and-where-it-goes">4. Data sent and where it goes</h2>
+<h3 id="41-pt-megarap-mitra-solusis-netra-server">4.1 PT. Megarap Mitra Solusi's Netra server</h3>
+<ul><li><strong>When checking the server:</strong> requests for the server's branding and version information (no personal data).</li><li><strong>When signing in:</strong> username or email and password (only for the server to verify, never stored by the app), platform (Android/iOS), device model name (e.g. "Samsung SM-F966B") and app version.</li><li><strong>When opening a terminal over the internet (version 1.2.0 and later):</strong> the CLI password issued by your Netra administrator (Netra server 1.26.0). The CLI password is typed only to open a terminal over the internet, is sent only to the Netra server for verification, and is never stored by the app — just like the sign-in password.</li><li><strong>During a session:</strong> requests for the data you open and the actions you take — for example acknowledging an alert with an optional note, search and filter terms, network tool targets (ping, traceroute, DNS, port check — executed by the server), and keystrokes in the SSH/Telnet terminal, which the server relays to network devices.</li><li><strong>For notifications:</strong> the Firebase Cloud Messaging (FCM) registration token, platform, device model name and app version.</li><li><strong>In the background (version 1.1.0 and later):</strong> so that you do not have to sign in often, the app extends the session about every 6 hours (Android WorkManager; on iOS through Background App Refresh when iOS allows it) and when the server announces that the session is about to end. An extension only sends the session token to PT. Megarap Mitra Solusi's Netra server — no new data is collected and nothing is sent to anyone else. When you tap "Bukan saya — cabut" (Not me — revoke) on a new-login notification, the app requests your account's session list from the server and revokes that session.</li></ul>
+<p>Data on the server is managed by PT. Megarap Mitra Solusi under its internal policies (for example audit logs).</p>
+<h3 id="42-google-firebase-cloud-messaging-push-notifications">4.2 Google Firebase Cloud Messaging (push notifications)</h3>
+<p>After you sign in, the app requests a registration token from Firebase Cloud Messaging (a Google service) and registers it with PT. Megarap Mitra Solusi's Netra server. The Netra server sends alert notifications — the alert title and summary (for example a device name and the type of problem) plus alert/device IDs — through FCM to your phone, using a Firebase project managed by the app developer on behalf of PT. Megarap Mitra Solusi. Netra server 1.25.0 also sends session notices (session about to end or ended) and security notices (a new sign-in to your account: device name and platform, IP address, time, and session ID). In this process Google processes the token, the Firebase installation ID, the notification content while it is delivered, and delivery metrics as a service provider. The app developer does not store notification content; the Firebase console only shows aggregated delivery statistics. The token is replaced (deleted and recreated) whenever you sign out or your session ends. Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h3 id="43-fiber-map-base-map">4.3 Fiber map base map</h3>
+<ul><li><strong>Google Maps</strong> (when available in the build and on the device; only while the fiber map is open): the Maps SDK sends Google the viewed map area, the IP address, request metadata (device model, OS and SDK version), a pseudonymous Maps SDK identifier, crash data from within the SDK code, and map interactions (panning, zooming) — to load the map and to maintain and improve Google services. Google's privacy policy applies.</li><li><strong>OpenStreetMap</strong> (when Google Maps is not available): map tiles are requested directly from OpenStreetMap Foundation servers; the requests include the IP address, the app identity (<code>NetraMobile/&lt;version&gt; (android)</code>) and the coordinates of the viewed tiles. OSMF Privacy Policy: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></li><li>Netra cable and point data is not sent to Google or the OSMF — only background tiles are loaded.</li><li>The app does not use GPS location and does not request location permission.</li></ul>
+<h3 id="44-no-one-else">4.4 No one else</h3>
+<p>No data is sold, used for advertising, or sent to the app developer.</p>
+<h2 id="5-app-permissions-android">5. App permissions (Android)</h2>
+<ul><li><strong>Internet</strong> — to reach the Netra server, FCM and maps.</li><li><strong>Notifications</strong> (Android 13+) — to show alert notifications; you may deny it and the app keeps working.</li><li><strong>Biometrics</strong> — optional app lock with fingerprint or screen lock.</li><li>Support permissions: receive FCM messages, briefly keep the device awake while processing a notification or extending the session, vibrate, network state, and reschedule the session extension after the device restarts.</li><li>No foreground service. No location, camera, microphone, contacts or file permissions.</li></ul>
+<h2 id="6-biometrics">6. Biometrics</h2>
+<p>The optional app lock uses the operating system's verification (BiometricPrompt on Android, Face ID/Touch ID on iOS). The app only receives a success or failure result; fingerprint and face data are never accessed, never stored by the app, and never leave the device.</p>
+<h2 id="7-security">7. Security</h2>
+<ul><li>Connections must be encrypted (HTTPS/WSS); unencrypted traffic is blocked.</li><li>A self-signed certificate is used only after you confirm its SHA-256 fingerprint, and it is then pinned per server; a changed certificate is blocked until you approve it again.</li><li>Session tokens are kept in the system's secure storage; sign-in and CLI passwords are not stored.</li></ul>
+<h2 id="8-retention-and-deletion">8. Retention and deletion</h2>
+<ul><li><strong>Sign out</strong> (Settings → Keluar): the device is removed from the server's notification list, the session is ended on the server, the FCM token is deleted, and the session token and offline data copy are deleted from the device.</li><li><strong>Sessions on other devices:</strong> Settings → Sesi saya → Cabut, or "Bukan saya — cabut" on a new-login notification.</li><li><strong>Delete everything:</strong> uninstall the app, or Android Settings → Apps → MMS NOC → Storage → Clear data.</li><li><strong>Data on the Netra server</strong> (account, session history, audit logs, registered notification devices) is controlled by PT. Megarap Mitra Solusi. To access, correct or delete your account and its data, contact PT. Megarap Mitra Solusi's Netra administrator.</li></ul>
+<h2 id="9-children">9. Children</h2>
+<p>The app is intended for adult network/NOC staff and is not directed at children.</p>
+<h2 id="10-changes">10. Changes</h2>
+<p>Changes are published on this page with a new "last updated" date; significant changes are also mentioned in the app's release notes.</p>
+<h2 id="11-contact">11. Contact</h2>
+<p>Questions about this policy: <strong><a href="mailto:tri@mms.net.id">tri@mms.net.id</a></strong> (PT. Megarap Mitra Solusi). For data on the Netra server, contact PT. Megarap Mitra Solusi's Netra administrator.</p>
+</article></main>
+<footer>MMS NOC · PT. Megarap Mitra Solusi · <a href="mailto:tri@mms.net.id">tri@mms.net.id</a></footer>
+</body>
+</html>
